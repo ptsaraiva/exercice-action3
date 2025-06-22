@@ -13,8 +13,10 @@ jobs:
             - name: Install Dependencies
               run: npm ci
             - name: Run Lint
-              run: npm lint
+              run: npm run lint
             - name: Run Test
-              run: npm test
+              run: npm run test
+            - name: Build
+              run: npn run build
             - name: Deploy
               run: echo "Deploying . . . "    
